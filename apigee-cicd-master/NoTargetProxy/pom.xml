@@ -8,9 +8,9 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Apigee</groupId>
-	<artifactId>NoTargetProxy</artifactId>
+	<artifactId>DK-I2C-Cards-Number</artifactId>
 	<version>1.0</version>
-	<name>NoTargetProxy</name>
+	<name>DK-I2C-Cards-Number</name>
 	<packaging>pom</packaging>
 </project>
 

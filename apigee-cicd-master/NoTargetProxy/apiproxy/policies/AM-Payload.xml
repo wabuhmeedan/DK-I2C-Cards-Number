@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Payload">
+    <DisplayName>AM-Payload</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="SOAPAction">GetCardAccounts</Header>
+            <Header name="Ocp-Apim-Subscription-Key">{private.ocp_apim_subscription_key}</Header>
+        </Headers>
+        <Payload contentType="text/xml">
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <soapenv:Body>
+                    <BalanceInquiry xmlns="http://www.i2c.com/cardsws/schema/request">
+                        <Acquirer>
+                            <Id>{private.acquirer_id}</Id>
+                            <UserId>{private.user_id}</UserId>
+                            <Password>{private.acquirer_password}</Password>
+                        </Acquirer>
+                        <Card>
+                            <ReferenceID>{i2c_wallet_reference_id}</ReferenceID>
+                        </Card>
+                        <SendClearCard>Y</SendClearCard>
+                    </BalanceInquiry>
+                </soapenv:Body>
+            </soapenv:Envelope>
+        </Payload>
+        <Verb>POST</Verb>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true">request</AssignTo>
+</AssignMessage>

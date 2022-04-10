@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout async="false" continueOnError="false" enabled="true" name="FC-I2C-MessageLogging">
+    <DisplayName>FC-I2C-MessageLogging</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <SharedFlowBundle>DK-I2C-MessageLogging</SharedFlowBundle>
+</FlowCallout>

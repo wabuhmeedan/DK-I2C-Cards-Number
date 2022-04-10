@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-ExpiryDate">
+    <DisplayName>EV-ExpiryDate</DisplayName>
+    <Source clearPayload="false">expiryDateResponse</Source>
+    <VariablePrefix>card</VariablePrefix>
+    <XMLPayload stopPayloadProcessing="false">
+        <Namespaces>
+            <Namespace prefix="soapenv">http://schemas.xmlsoap.org/soap/envelope/</Namespace>
+            <Namespace prefix="ns">http://www.i2c.com/cardsws/schema/response</Namespace>
+        </Namespaces>
+        <Variable name="expiry_date" type="string">
+            <XPath>/soapenv:Envelope/soapenv:Body/ns:GetCardAuthDataResponse/ns:ExpiryDate</XPath>
+        </Variable>
+    </XMLPayload>
+</ExtractVariables>

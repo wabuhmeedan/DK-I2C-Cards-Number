@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="7" name="DK-I2C-Cards-Number">
+    <Basepaths>/dk-i2c-cards-number</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1642496676878</CreatedAt>
+    <CreatedBy>mekala.lingaiah-e@maf.ae</CreatedBy>
+    <Description></Description>
+    <DisplayName>DK-I2C-Cards-Number</DisplayName>
+    <LastModifiedAt>1647163083316</LastModifiedAt>
+    <LastModifiedBy>waleed.abuhmeedan@maf.ae</LastModifiedBy>
+    <ManifestVersion>SHA-512:04e4a1490bd59cda0d3a38d978848b91b422a17387137aa81b119f77e39aa3f0e01d79629ec7cb8661abbd2d7620d90dbdb68736e19131e185ae4764fea829da:ap-southeast-2</ManifestVersion>
+    <Policies>
+        <Policy>AM-Payload</Policy>
+        <Policy>AM-Response</Policy>
+        <Policy>EV-ExpiryDate</Policy>
+        <Policy>EV-Response</Policy>
+        <Policy>FC-Auth0-VerifyAuthorization</Policy>
+        <Policy>FC-GetI2CCredentials</Policy>
+        <Policy>FC-GetI2CReferenceId</Policy>
+        <Policy>FC-I2C-CheckAndHandleErrors</Policy>
+        <Policy>FC-I2C-MessageLogging</Policy>
+        <Policy>FC-LoggingJavaScript</Policy>
+        <Policy>FC-SharedResponse</Policy>
+        <Policy>FC-SpikeArrest-Normal</Policy>
+        <Policy>FC-VerifyApiKey</Policy>
+        <Policy>JS-AppRequest</Policy>
+        <Policy>JS-DataMasking</Policy>
+        <Policy>JS-I2CResponse</Policy>
+        <Policy>JS-Response</Policy>
+        <Policy>JSON-Request-to-XML</Policy>
+        <Policy>RF-MethodNotAllowed</Policy>
+        <Policy>SCO-ExpiryDate</Policy>
+        <Policy>XML-Request-to-JSON</Policy>
+        <Policy>XML-Respnse-to-JSON</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://AppRequest.js</Resource>
+        <Resource>jsc://DataMasking.js</Resource>
+        <Resource>jsc://I2CResponse.js</Resource>
+        <Resource>jsc://Response.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

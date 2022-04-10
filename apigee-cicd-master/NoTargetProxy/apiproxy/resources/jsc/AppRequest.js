@@ -1,0 +1,1 @@
+context.setVariable("appRequest", context.getVariable("request.content"));

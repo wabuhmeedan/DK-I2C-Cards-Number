@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest name="manifest">
     <Policies>
-        <VersionInfo resourceName="JavaScript-1" version="SHA-512:1d0da5a993dadc0c9e751e44aff30c5f793fd813bf344f017419841a036caeb64cf065e9c062cc7dc44ddaf7ac8dfb65ace9cc45349b071d82bf9004513b2601"/>
-        <VersionInfo resourceName="OA2-VerifyAccessToken" version="SHA-512:a45c08790c3697d51bc2a866ad1ca7a7b1fc3c684d67131d558f08a539a57209cb3a28c780b116e800f3793cc25e10957209d0955407b039b45a51bf92cce388"/>
-        <VersionInfo resourceName="textResponse" version="SHA-512:e0caac9631bc543112d8e05511021432d18ef6b870f66ef39f91f1727f7bd98ed851836305dc8f6c3b883cf8fce603062fe3271a18c0c4b3c0426c2abc2d492f"/>
+        <VersionInfo resourceName="AM-Payload" version="SHA-512:13233c23be330d6d7732c7b7241311a8132ffad62b443b5e82af8663e6b245aa1f1a4c2aabd04ec5baf51c1807344616025960140d9dc113070800dd83074efd"/>
+        <VersionInfo resourceName="AM-Response" version="SHA-512:0d099db4ad8a43102c77ec896b5f064a5cfbfb1c49a7b8b53d1f5ee559a6bcfa8b8af553a6acf11539cfe03c0e4149adafdcabbb8627a04ac40f8655f81f157e"/>
+        <VersionInfo resourceName="EV-ExpiryDate" version="SHA-512:d353cc855627dde8e483164d993b6b297e5e2a517fa614efa47bb4e72a5efc90c735174e2d155573dcf4e99e1430aa2a7fa1f3be557330b7a0cd923d0c787322"/>
+        <VersionInfo resourceName="EV-Response" version="SHA-512:50e684390ec17a03e8996c71abe84042bc29711509e840721eae4bd76daa74d9120cd4f01b130b13ed42d2631c58ab44ec59d5d667f7673e7e970a46d3a88b56"/>
+        <VersionInfo resourceName="FC-Auth0-VerifyAuthorization" version="SHA-512:623bb381e2cec3c23583e0dfcd20fd292496da6d99b843f7eaf372c29206e8dca8308eed2bfbdf8fee2f9f2db97ae31a5a930311af846f7e41df4d6e3a5a99e2"/>
+        <VersionInfo resourceName="FC-GetI2CCredentials" version="SHA-512:eec6a989ad97640989b6e30feac968c378cffede36f22ec5b80eaecb38162d3ddccfad355f0c1ce3db6cadd8c01bf01f47bbd3e49cf18a8a5294151fc801b2f2"/>
+        <VersionInfo resourceName="FC-GetI2CReferenceId" version="SHA-512:f853b5a2fc01ca3b6cc64cc9d5612eca417f8da771d34b65a0e6fd84e7f04679c1f867f10cfb3df633bb51b6abd98b5119750ff40445446fe19a0f872ab189c5"/>
+        <VersionInfo resourceName="FC-I2C-CheckAndHandleErrors" version="SHA-512:a0e181f4c44e9a98f2fc32821846f93fe60f58d0ba5936b2e73df6934f9a1a0ae6f49ca870af4a1cfdc56e0513d2ac3a4c3675c1379b22c8e8117edaf9a709bc"/>
+        <VersionInfo resourceName="FC-I2C-MessageLogging" version="SHA-512:ac5ab6a5871e177adf26fc46f200998b16927ec547e207433d51007c409a9edbf1d42f04e53630d040e35a0916eef9a69413f42da3e7903a02e0c3aedd94fd0e"/>
+        <VersionInfo resourceName="FC-LoggingJavaScript" version="SHA-512:73d761e2c2ae2763f18b4f1d57d30fc365a970b49ae31974a220c37d0a6b64f493234f85ef43dbaaac077d49e24f6bd529bc0289166f555783919215b7392c7c"/>
+        <VersionInfo resourceName="FC-SharedResponse" version="SHA-512:54300b2bb993d7798a5f710c98d5e856e3c2b2d87a33ce222c6c84badb403cbafeee9d1bc88a9093e8b82fa2d54cccb9ae2d3f12f97774a0690a12729c34b04b"/>
+        <VersionInfo resourceName="FC-SpikeArrest-Normal" version="SHA-512:2321333f3f987575b6058b7819730c75e301da754e1ff53dbba30cd14cd0fc00d79f81f0532578149cefec9346c047af740950eacd667090bc51d487a0f18eb7"/>
+        <VersionInfo resourceName="FC-VerifyApiKey" version="SHA-512:a0c8f4b6ce832abaaf5386062456b19b89a4be6cf89aa6e237058e212107de4f59d7a8543b4b1279186ff307e4892c4b56e802a9292732d487cab770f61f7cc4"/>
+        <VersionInfo resourceName="JS-AppRequest" version="SHA-512:d923b9d7581e98f8f93c0f5abc5651b6696b11bf9f49d928291eb43422ff6ef648fb6e6e43d969bdb10fab49d392f5a40184c73ceca1e789ac582ccd8172cd61"/>
+        <VersionInfo resourceName="JS-DataMasking" version="SHA-512:7a7cf2f42489d603670453ee13961ad7015f6d7549493561169857e271c0b05c8ee574ae100725fca4ae7b7c519574ee7e75df617fde6714636f33836be0aee1"/>
+        <VersionInfo resourceName="JS-I2CResponse" version="SHA-512:6072a18ca84803430bf623fbf293d17a69159adf61894d0ec8a648c230daefa9131dd07a8bf936e089b61c8e0932b7ec5b0659d1d436b91bdefc75babaf07a95"/>
+        <VersionInfo resourceName="JS-Response" version="SHA-512:18d78e9dd2e7f6d477e09e0ee33e91c2747f1347a2eb095adfb454fedd498cb4b1b780acd8e974c94e22e9ab90cd73d2477031530e20dfae7b47a5ffccf6eaa2"/>
+        <VersionInfo resourceName="JSON-Request-to-XML" version="SHA-512:28a3575204fde478376973cb988477746db2114355613376a515c7959fb212611d543c52486d1e351b822639f8b3dd8497ef8b4484e3aee33da66dbc15f18203"/>
+        <VersionInfo resourceName="RF-MethodNotAllowed" version="SHA-512:597334c02e6089f1717fb03956c228627b5a45e4674a5d5454e2b9e92e9114f2af93931b1983e3f03eac65720d49938c6171909e699057bd2ec7ede9466221cf"/>
+        <VersionInfo resourceName="SCO-ExpiryDate" version="SHA-512:3e59683972e810f2194498c30193ab6602df8a226f923fbc1efa1bb524db563419360edc5010ccd67f7be6faaf7af7f2ecfba3efb4f769597d760676f9e056e9"/>
+        <VersionInfo resourceName="XML-Request-to-JSON" version="SHA-512:74d9e7565f6c123819244879b89b8344c2f129ce51a5712fae9f93ad4374629a0cb92d703543be4524cb666b83c135f415b7ee2eacf2c2763a86c62837027b71"/>
+        <VersionInfo resourceName="XML-Respnse-to-JSON" version="SHA-512:645bd9791b355049b42ba3413691c671be55cc5e8f0fa511abbb16097b83290d82b8d10792a015338532d76b38bbe145baa512f9f79839b484faf195eb297ce8"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:f0b0aad4351deb9be679bda137e5adffc592e3320ff7d56b03cc199b4cae7a17e6bf680b2afc3ffc5bc9f4296e0ebfb42d2e673b238d7f535ca3b5e83c8fec71"/>
+        <VersionInfo resourceName="default" version="SHA-512:f4e9f4503395954162c37cc092e58de1f3545cf32eacaa5fbc59f33675b5f68c125e30183a7f9e0c0c0e83a5bf39fc3e956567826c970d3941d058b0817df17f"/>
     </ProxyEndpoints>
     <Resources>
-        <VersionInfo resourceName="jsc://JavaScript-1.js" version="SHA-512:953b0692f3e767a74e3e2f60c1dcf9964c8c2c969f2a69c80b877965703b5715b5cc80d82972ef787d1cb7c815504e9652fe6dc9fe502b1d456a80f5af2644f7"/>
-        <VersionInfo resourceName="jsc://Logging-User-Setting-ID.js" version="SHA-512:94d688835c726a59acd4165beb30122432cb1315413aca71c177c106ad9c1d9e9529eb21673365778f8498fd3e3dfe02e05c9b55c9d0b97c8c5677dd20a7a346"/>
-        <VersionInfo resourceName="jsc://app.js" version="SHA-512:472932746f87274e1fe2f4c36f4558a087a3422c999211aa76a9cc1449659f665ad9973472c58f7d22e089c7e9c64839919f9bed9ba3127523b4616683d1d943"/>
-        <VersionInfo resourceName="node://hello-world.js" version="SHA-512:af2aed96a9a04d520882852dea526071bcd53fc98d49138dd27861df33be13d4930d62dd7e0217eb75c6e39b05810fffe09132429061566a3b5b2dcfcf087172"/>
+        <VersionInfo resourceName="jsc://AppRequest.js" version="SHA-512:9f81bbd37157f43138c4d6a204b6abf63453154ffef07f048dc81e87f2e9774e553b099c2f77d243d7575e7377ae873483cb53a03f0f8aef0fed79373f57dd05"/>
+        <VersionInfo resourceName="jsc://DataMasking.js" version="SHA-512:bb07c9b68d9f141c801a69e6a2150194bd7027862674a5bbe760560b300b540de83afa4af20830b4a2bf3f6aff396c331856d2531fff9c2bed082231b1cd685d"/>
+        <VersionInfo resourceName="jsc://I2CResponse.js" version="SHA-512:a134e5705c9dac034c39c9b45ec3c6a1f1fe294892404ab5fe76a2f103d87bb443ae57f2b6cdc434875d7ff10947db2d473c5752befa55aba937e6e3ed28842b"/>
+        <VersionInfo resourceName="jsc://Response.js" version="SHA-512:81869a1ff3b8308a41ed27d5ed2f70b25b48837f268ba267f234d31c813e06a4c34fa6f6961184387c5143afd957b94f53b2dfa70b0bb47e5e6aa5b67c2c625f"/>
     </Resources>
     <SharedFlows/>
     <TargetEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:0867cc24f98bfd1c8229207d716a502b85dc3c28a6989779f6d6411832753968394ef71ea945acb16eb88b3260f58fe600e6da6e3935f3df71e7d2d546f52a2b"/>
+        <VersionInfo resourceName="default" version="SHA-512:1258e27d5fe57db67dc9d1b7eb7af76d0b2be94211820a721969c181c53a56dc969bdc6f470433c41559b73376d986bcf3de70ff7a539534c86bf0f48fd6de41"/>
     </TargetEndpoints>
 </Manifest>
