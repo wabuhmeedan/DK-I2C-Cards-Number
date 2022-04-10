@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-Response">
+    <DisplayName>EV-Response</DisplayName>
+    <Source clearPayload="false">response</Source>
+    <VariablePrefix>card</VariablePrefix>
+    <XMLPayload stopPayloadProcessing="false">
+        <Namespaces>
+            <Namespace prefix="soapenv">http://schemas.xmlsoap.org/soap/envelope/</Namespace>
+            <Namespace prefix="ns">http://www.i2c.com/cardsws/schema/response</Namespace>
+        </Namespaces>
+        <Variable name="card_number" type="string">
+            <XPath>/soapenv:Envelope/soapenv:Body/ns:BalanceInquiryResponse/ns:CardNumber</XPath>
+        </Variable>
+    </XMLPayload>
+</ExtractVariables>

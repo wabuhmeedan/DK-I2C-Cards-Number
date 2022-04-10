@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SCO-ExpiryDate">
+    <DisplayName>SCO-ExpiryDate</DisplayName>
+    <Properties/>
+    <Request variable="myRequest" clearPayload="true">
+        <Set>
+            <Verb>POST</Verb>
+            <Headers>
+                <Header name="SOAPAction">GetCardAuthData</Header>
+                <Header name="Ocp-Apim-Subscription-Key">{private.ocp_apim_subscription_key}</Header>
+            </Headers>
+            <Payload contentType="text/xml">
+                <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <soapenv:Body>
+                        <GetCardAuthData xmlns="http://www.i2c.com/cardsws/schema/request">
+                            <Acquirer>
+                                <Id>{private.acquirer_id}</Id>
+                                <UserId>{private.user_id}</UserId>
+                                <Password>{private.acquirer_password}</Password>
+                            </Acquirer>
+                            <Card>
+                                <ReferenceID>{i2c_wallet_reference_id}</ReferenceID>
+                            </Card>
+                        </GetCardAuthData>
+                    </soapenv:Body>
+                </soapenv:Envelope>
+            </Payload>
+        </Set>
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>expiryDateResponse</Response>
+    <HTTPTargetConnection>
+        <LoadBalancer>
+            <Server name="AIO-I2C"/>
+        </LoadBalancer>
+        <Path>MCPWebServiceDL/services/MCPWSHandler</Path>
+    </HTTPTargetConnection>
+</ServiceCallout>

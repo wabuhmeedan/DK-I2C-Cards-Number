@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="JS-AppRequest">
+    <DisplayName>JS-AppRequest</DisplayName>
+    <Properties/>
+    <ResourceURL>jsc://AppRequest.js</ResourceURL>
+</Javascript>

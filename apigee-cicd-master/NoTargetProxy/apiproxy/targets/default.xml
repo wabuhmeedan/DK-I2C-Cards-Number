@@ -1,17 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><TargetEndpoint name="default">
-    <Description/>
-    <FaultRules/>
-    <Flows/>
-    <HTTPTargetConnection>
-        <Properties/>
-        <URL>http://rimshaaizaz-eval-test.apigee.net</URL>
-    </HTTPTargetConnection>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
     <PreFlow name="PreFlow">
-        <Request/>
+        <Request>
+            <Step>
+                <Name>SCO-ExpiryDate</Name>
+                <Condition>i2c_wallet_reference_id != null</Condition>
+            </Step>
+            <Step>
+                <Condition>i2c_wallet_reference_id != null</Condition>
+                <Name>EV-ExpiryDate</Name>
+            </Step>
+            <Step>
+                <Name>AM-Payload</Name>
+            </Step>
+        </Request>
         <Response/>
     </PreFlow>
+    <Flows/>
     <PostFlow name="PostFlow">
         <Request/>
-        <Response/>
+        <Response>
+            <Step>
+                <Name>JS-I2CResponse</Name>
+            </Step>
+            <Step>
+                <Name>XML-Request-to-JSON</Name>
+            </Step>
+            <Step>
+                <Name>XML-Respnse-to-JSON</Name>
+            </Step>
+            <Step>
+                <Name>JS-DataMasking</Name>
+            </Step>
+            <Step>
+                <Name>JSON-Request-to-XML</Name>
+            </Step>
+            <Step>
+                <Name>EV-Response</Name>
+            </Step>
+            <Step>
+                <Name>FC-I2C-CheckAndHandleErrors</Name>
+            </Step>
+            <Step>
+                <Name>JS-Response</Name>
+            </Step>
+            <Step>
+                <Name>AM-Response</Name>
+            </Step>
+            <Step>
+                <Name>FC-SharedResponse</Name>
+            </Step>
+        </Response>
     </PostFlow>
+    <HTTPTargetConnection>
+        <LoadBalancer>
+            <Server name="AIO-I2C"/>
+        </LoadBalancer>
+        <Path>MCPWebServiceDL/services/MCPWSHandler</Path>
+    </HTTPTargetConnection>
 </TargetEndpoint>
