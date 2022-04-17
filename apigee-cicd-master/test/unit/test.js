@@ -3,7 +3,7 @@
 var expect = require('expect.js');
 var sinon = require('sinon');
 var rewire = require('rewire');
-var app = rewire('../../NoTargetProxy/apiproxy/resources/jsc/app.js');	//Target javascript file to be tested
+var app = rewire('../../NoTargetProxy/apiproxy/resources/jsc/DataMasking.js');	//Target javascript file to be tested
 
 var fakeContext = {							//declaring fake contexts
   getVariable: function(s) {},
@@ -25,20 +25,20 @@ afterEach(function() {						//restore all stubbed methods back to their original
 
 describe('feature: check & set Verb', function() {
 
-  it('should have POST', function() {
-    contextGetVariableMethod.withArgs('request.verb').returns("POST");
+  it('should have GET', function() {
+    contextGetVariableMethod.withArgs('request.verb').returns("GET");
     app.__set__('context', fakeContext);								//Setting Fake Contexts
 
     var checkVerb = app.__get__('checkVerb');
-    expect(checkVerb()).to.equal("POST");								//Final Assertion on mocked function response
+    expect(checkVerb()).to.equal("GET");								//Final Assertion on mocked function response
   });
 
-  it('should set POST', function() {
-    contextSetVariableMethod.withArgs('request.verb').returns("POST");
+  it('should set GET', function() {
+    contextSetVariableMethod.withArgs('request.verb').returns("GET");
     app.__set__('context', fakeContext);
 
     var setVerb = app.__get__('setVerb');
-    expect(setVerb()).to.equal("POST");
+    expect(setVerb()).to.equal("GET");
   });
 
 /*it('should fail a test on error', function(done) {
