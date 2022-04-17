@@ -33,6 +33,5 @@ beforeEach(function () {												//This method will execute before every it()
 
 afterEach(function () {						//restore all stubbed methods back to their original implementation
   contextGetVariableMethod.restore();
-  contextSetVariableMethod.restore();
-  
+  contextSetVariableMethod.restore();  
 });
