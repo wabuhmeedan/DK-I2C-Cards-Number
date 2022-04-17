@@ -13,7 +13,7 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ sandbox ]
+    branches: [ prod ]
   pull_request:
     # The branches below must be a subset of the branches abov
     branches: [ sandbox ]
