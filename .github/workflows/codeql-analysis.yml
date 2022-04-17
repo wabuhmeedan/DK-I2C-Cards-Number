@@ -16,7 +16,7 @@ on:
     branches: [ sandbox ]
   pull_request:
     # The branches below must be a subset of the branches abov
-    branches: [ prod ]
+    branches: [ sandbox ]
   schedule:
     - cron: '31 16 * * 4'
 
